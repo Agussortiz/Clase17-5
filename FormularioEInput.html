@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario E Input</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="FormularioEInput.css">
+</head>
+
+<body>
+    <div class="formulario">
+        <div id="NOMBRE-EMAIL">
+            <label for="name">Escribe tu nombre y apellidos</label><br>
+            <input id="name"><br>
+            <input type="email" id="email" placeholder="Escribe tu Email"><br>
+        </div>
+        <div id="GENERO">
+            <label for="genero">Género:</label><br>
+            <input type="radio" id="femenino" name="genero" value="Femenino">
+            <label for="femenino">Femenino</label><br>
+
+            <input type="radio" id="masculino" name="genero" value="Masculino">
+            <label for="masculino">Masculino</label><br>
+
+            <input type="radio" id="no-binario" name="genero" value="No binario">
+            <label for="no-binario">No binario</label><br>
+
+            <input type="radio" id="prefiero-no-decirlo" name="genero" value="Prefiero no decirlo">
+            <label for="prefiero-no-decirlo">Prefiero no decirlo</label><br>
+        </div>
+        <div id="EDAD">
+            <label for="rango-edad">Rango de Edad:</label><br>
+            <select id="rango-edad" name="rango-edad">
+                <option value="menor-18">Menor a 18 años</option>
+                <option value="19-30">19-30 años</option>
+                <option value="31-45">31-45 años</option>
+                <option value="46-55">46-55 años</option>
+                <option value="mayor-56">Mayor a 56 años</option>
+            </select>
+        </div>
+        <div id="NACIONALIDADD">
+            <h3>Nacionalidad:</h3>
+            <input type="radio" id="argentino" name="nacionalidad" value="argentino">
+            <label for="argentino">Argentino</label><br>
+            <input type="radio" id="otro" name="nacionalidad" value="otro">
+            <label for="otro">Otro</label><br>
+        </div>
+
+        <p><button type="submit" id="enviar-btn">Enviar</button></p>
+    </div>
+    <script src="FormularioEInput.js"></script>
+</body>
+
+</html>
